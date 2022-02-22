@@ -16,8 +16,8 @@ export const Timer = ({ timeData }) => {
       let date = new Date().toTimeString().split(" ")[0].split(":");
       setTime({
         hour: 24 - date[0],
-        minute: 60 - date[1],
-        second: 60 - date[2],
+        minute: 59 - date[1],
+        second: 59 - date[2],
       });
     }, 1000);
     return () => {

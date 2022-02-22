@@ -15,3 +15,13 @@
   width: 1200px;
   margin: auto;
 }
+.bold-text-heading{
+  color: white;
+    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 24px;
+}
+.text-sub-gray{
+  color: rgb(136, 142, 158);
+    font-size: 16px;
+    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}

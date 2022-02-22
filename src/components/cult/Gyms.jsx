@@ -3,8 +3,14 @@ import { Banner } from "../banner/banner";
 import { Timer } from "../timer/Timer";
 import { Trails } from "../trails/Trails";
 import { PromoVideo } from "../promoVideo/PromoVideo";
+import { PriceList } from "../priceList/PriceList";
 
 export const Gyms = () => {
+  const promoStyle = {
+    title: "cultpass ELITE",
+    subHeading: "Unlimited access to all centers, gyms and live workouts",
+    style: { background: "#586284", height: "450px" },
+  };
   const image = {
     src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/8493f704-baba-48e4-9ae6-180ca10f8c5c.png",
   };
@@ -17,7 +23,27 @@ export const Gyms = () => {
       <Banner image={image} />
       <Timer timeData={timeData} />
       <Trails />
-      <PromoVideo />
+      <div className="width-1200">
+        <h1 className="text-5xl my-10 mt-40">What You Get</h1>
+        <div className="flex">
+          <img
+            width="25%"
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_176,ar_660:300,c_fit/dpr_2/image/vm/2e3e1096-d010-4b98-9153-a8da0d768782.png"
+            alt=""
+          />
+          <img
+            width="25%"
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_176,ar_660:300,c_fit/dpr_2/image/vm/f2913cfc-3e11-441a-9e86-e8118b97bc52.png"
+            alt=""
+          />
+          <img
+            width="25%"
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_176,ar_660:300,c_fit/dpr_2/image/vm/c359a340-607b-4df3-9a38-c2bcab421326.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <PriceList promoStyle={promoStyle} />
     </div>
   );
 };

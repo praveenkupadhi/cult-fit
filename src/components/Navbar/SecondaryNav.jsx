@@ -70,6 +70,7 @@ export const SecondaryNav = ({ change, scrollPosition }) => {
         background: "#393A3B",
         position: scrollPosition > 35 ? "fixed" : "static",
         transition: "all 2s ease",
+        zIndex: "999",
       }}
       className="w-full flex justify-center  top-0"
     >

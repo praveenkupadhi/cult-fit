@@ -3,8 +3,14 @@ import { Banner } from "../banner/banner";
 import { Timer } from "../timer/Timer";
 import { Trails } from "../trails/Trails";
 import { PromoVideo } from "../promoVideo/PromoVideo";
+import { PriceList } from "../priceList/PriceList";
 
 export const CultCenter = () => {
+  const promoStyle = {
+    title: "cultpass ELITE",
+    subHeading: "Unlimited access to all centers, gyms and live workouts",
+    style: { background: "#586284", height: "450px" },
+  };
   const image = {
     src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/e60fc92f-0b4f-4ac3-9add-ee3661c127ac.png",
   };
@@ -18,6 +24,7 @@ export const CultCenter = () => {
       <Timer timeData={timeData} />
       <Trails />
       <PromoVideo />
+      <PriceList promoStyle={promoStyle} />
     </div>
   );
 };
