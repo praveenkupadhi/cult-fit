@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 
 export const SecondaryNav = () => {
   return (
-    <div className="w-full flex ">
-      <div className="flex h-2 space-x-1">
+    <div
+      style={{
+        background: "red",
+      }}
+      className="w-full flex justify-center bg-black"
+    >
+      <div className=" w-3/6 justify-center flex ">
         <Link to="/">
           <button className=" "> care</button>
         </Link>
