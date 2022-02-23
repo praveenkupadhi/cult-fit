@@ -1,9 +1,9 @@
 import React from "react";
-import { Banner } from "../banner/banner";
-import { Timer } from "../timer/Timer";
-import { Trails } from "../trails/Trails";
-import { PromoVideo } from "../promoVideo/PromoVideo";
-import { PriceList } from "../priceList/PriceList";
+import { Banner } from "../componentSection/banner/banner";
+import { Timer } from "../componentSection/timer/Timer";
+import { Trails } from "../componentSection/trails/Trails";
+// import { PromoVideo } from "../componentSection/promoVideo/PromoVideo";
+import { PriceList } from "../componentSection/priceList/PriceList";
 
 export const Gyms = () => {
   const promoStyle = {
