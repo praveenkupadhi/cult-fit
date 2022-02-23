@@ -31,6 +31,7 @@ const H1Text = styled.h1`
   flex-direction: column;
   font-size: 50px;
   position: relative;
+  line-height: 6rem;
   margin-top: 20px;
   font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
     sans-serif;
@@ -41,7 +42,7 @@ const CoverDiv = styled.div`
   width: 100px;
   height: 50px;
   overflow: hidden;
-  left: 16rem;
+  left: 17rem;
   top: 13%;
 `;
 const Span = styled.span`
@@ -50,6 +51,16 @@ const Span = styled.span`
   position: absolute;
   top: -20%;
   transition: all 1s ease-out;
+`;
+const TextDivDes = styled.div`
+  font-size: 18px;
+  color: #6e6d6d;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 95%;
+  line-height: 40px;
+  font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
 `;
 export const HeroSec = () => {
   const [muted, setMuted] = useState(true);
@@ -80,6 +91,13 @@ export const HeroSec = () => {
             </CoverDiv>
           </H1Text>
           <H1Text>of fit</H1Text>
+          <TextDivDes>
+            At cult.fit, we strive to keep you fit & healthy through a range of
+            holistic offerings that include fitness and yoga, healthy meals,
+            mental wellbeing and primary care. Now anyone can now stay healthy
+            from the safety of their homes with just a single app that helps you
+            to #BeBetterEveryDay
+          </TextDivDes>
         </TextDiv>
         <VideoDiv>
           <Video width="100%" autoPlay loop ref={videoRef}>
