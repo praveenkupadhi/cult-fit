@@ -99,6 +99,27 @@ const H1 = styled.h1`
   color: #fff;
   width: 70%;
 `;
+const ImgText = styled.div`
+  padding-left: 20px;
+`;
+const ImgP = styled.p`
+  font-size: 14px;
+  width: 290px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: #dfdfdf;
+  font-family: BrandonTextWeb-Regular, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+`;
+const Button = styled.button`
+  cursor: pointer;
+  float: left;
+  padding: 5px 10px 5px 10px;
+  color: #ffff;
+  border: 1px solid white;
+  border-radius: 30px;
+`;
+//////////////////////////////////////////////
 export const NavCat = ({ data }) => {
   const navigate = useNavigate();
 
@@ -108,26 +129,7 @@ export const NavCat = ({ data }) => {
     two: false,
     three: false,
   });
-  const ImgText = styled.div`
-    padding-left: 20px;
-  `;
-  const ImgP = styled.p`
-    font-size: 14px;
-    width: 290px;
-    line-height: 30px;
-    margin-bottom: 20px;
-    color: #dfdfdf;
-    font-family: BrandonTextWeb-Regular, Helvetica Neue, Helvetica, Roboto,
-      Arial, sans-serif;
-  `;
-  const Button = styled.button`
-    cursor: pointer;
-    float: left;
-    padding: 5px 10px 5px 10px;
-    color: #ffff;
-    border: 1px solid white;
-    border-radius: 30px;
-  `;
+
   return (
     <Main>
       <TextDiv>
