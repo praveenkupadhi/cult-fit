@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import styled from "styled-components";
 
 const EnterOtp = styled.div`
@@ -62,7 +62,7 @@ export const Otp = ({ otp, setOtp }) => {
       <input
         type="text"
         onChange={(e) => {
-          if (otp.length == 0) {
+          if (otp.length === 0) {
             setOtp([...otp, e.target.value]);
           }
         }}
@@ -80,7 +80,7 @@ export const Otp = ({ otp, setOtp }) => {
         type="text"
         ref={otpRef2}
         onChange={(e) => {
-          if (otp.length == 1) {
+          if (otp.length === 1) {
             setOtp([...otp, e.target.value]);
           }
         }}
@@ -100,7 +100,7 @@ export const Otp = ({ otp, setOtp }) => {
         type="text"
         ref={otpRef3}
         onChange={(e) => {
-          if (otp.length == 2) {
+          if (otp.length === 2) {
             setOtp([...otp, e.target.value]);
           }
         }}

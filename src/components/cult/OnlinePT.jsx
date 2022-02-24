@@ -27,7 +27,7 @@ export const OnlinePT = () => {
 		<div>
 			<Banner image={image} />
 			<Timer timeData={timeData} />
-			<img src={tryFree} className="w-4/5 m-auto mt-20 rounded-md" />
+			<img src={tryFree} className="w-4/5 m-auto mt-20 rounded-md" alt="" />
 			<MembershipSection promoStyle={promoStyle} />
 			<img src={keyFeatures} alt="" className="py-20" />
 			<Workouts />

@@ -133,7 +133,7 @@ export const PriceList = ({ promoStyle }) => {
             </div>
             <SecCon>
               <SecConDiv>
-                <img src="https://static.cure.fit/assets/images/offer-icon-copy.svg" />
+                <img src="https://static.cure.fit/assets/images/offer-icon-copy.svg"  alt="" />
               </SecConDiv>
               <SecConP>Only Today I Get additional Rs.500 OFF</SecConP>
             </SecCon>
@@ -147,7 +147,7 @@ export const PriceList = ({ promoStyle }) => {
             </div>
             <SecCon>
               <SecConDiv>
-                <img src="https://static.cure.fit/assets/images/offer-icon-copy.svg" />
+                <img src="https://static.cure.fit/assets/images/offer-icon-copy.svg"  alt="" />
               </SecConDiv>
               <SecConP>Only Today I Get additional Rs.500 OFF</SecConP>
             </SecCon>
@@ -161,7 +161,7 @@ export const PriceList = ({ promoStyle }) => {
             </div>
             <SecCon>
               <SecConDiv>
-                <img src="https://static.cure.fit/assets/images/offer-icon-copy.svg" />
+                <img src="https://static.cure.fit/assets/images/offer-icon-copy.svg"  alt="" />
               </SecConDiv>
               <SecConP>Only Today I Get additional Rs.500 OFF</SecConP>
             </SecCon>

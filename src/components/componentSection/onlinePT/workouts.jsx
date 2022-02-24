@@ -15,10 +15,10 @@ export const Workouts = () => {
 			</p>
 			<div style={{ display: "flex", gap: "4rem" }}>
 				<Link to="#">
-					<img src={workoutImg1} style={{ borderRadius: "0.5rem" }} />
+					<img src={workoutImg1} style={{ borderRadius: "0.5rem" }}  alt="" />
 				</Link>
 				<Link to="#">
-					<img src={workoutImg2} style={{ borderRadius: "0.5rem" }} />
+					<img src={workoutImg2} style={{ borderRadius: "0.5rem" }}  alt="" />
 				</Link>
 			</div>
 		</div>

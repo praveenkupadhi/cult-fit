@@ -66,7 +66,6 @@ export const HeroSec = () => {
   const [muted, setMuted] = useState(true);
   const videoRef = useRef(null);
   const [text, setText] = useState(0);
-  const textArr = ["love", "fun", "ease"];
   useEffect(() => {
     videoRef.current.muted = muted;
   }, [muted]);

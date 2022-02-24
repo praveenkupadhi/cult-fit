@@ -20,14 +20,7 @@ const Hr = styled.div`
     transform: translateX(-50%);
   }
 `;
-const Span = styled.span`
-  color: white;
-  padding-top: 5px;
-  font-size: 16px;
-  margin: 0px;
-  font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
-    sans-serif;
-`;
+
 const H2 = styled.h2`
   color: white;
   margin: 5px 0px 0px 5px;
@@ -55,6 +48,7 @@ export const MembershipSection = ({ promoStyle }) => {
           <img
             src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/livept/web/home.png"
             className="w-6 h-9"
+            alt=""
           />
           <div className="text-xl pt-1.5 pl-2">At Home Workouts</div>
         </H2>
@@ -62,6 +56,7 @@ export const MembershipSection = ({ promoStyle }) => {
           <img
             src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/livept/web/cult.png"
             className="w-6 h-9"
+            alt=""
           />
           <div className="text-xl pt-1.5 pl-2">Personalized Workouts</div>
         </H2>
@@ -69,6 +64,7 @@ export const MembershipSection = ({ promoStyle }) => {
           <img
             src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/livept/web/plan.png"
             className="w-6 h-9"
+            alt=""
           />
           <div className="text-xl pt-1.5 pl-2">Posture Correction</div>
         </H2>
@@ -90,6 +86,7 @@ export const MembershipSection = ({ promoStyle }) => {
             <img
               src="https://static.cure.fit/assets/images/offer-icon-copy.svg"
               className="w-4"
+              alt=""
             />
             <div className="text-lg">
               Get 50 sessions Live PT FREE 50 session pack
@@ -111,6 +108,7 @@ export const MembershipSection = ({ promoStyle }) => {
             <img
               src="https://static.cure.fit/assets/images/offer-icon-copy.svg"
               className="w-4"
+              alt=""
             />
             <div className="text-lg">
               Get 25 sessions Live PT FREE 25 session pack
@@ -132,6 +130,7 @@ export const MembershipSection = ({ promoStyle }) => {
             <img
               src="https://static.cure.fit/assets/images/offer-icon-copy.svg"
               className="w-4"
+              alt=""
             />
             <div className="text-lg">
               Get 10 sessions Live PT FREE 10 session pack

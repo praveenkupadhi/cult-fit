@@ -35,7 +35,7 @@ export const SecondaryNav = ({ change, scrollPosition }) => {
     changeCats();
   }, [change]);
 
-  if (pathname == "/") {
+  if (pathname === "/") {
     return null;
   }
   function changeCats() {
