@@ -1,8 +1,12 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const Main = styled.div`
   height: 500px;
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 200px;
 `;
 const TextDiv = styled.div`
   width: 100%;
@@ -96,8 +100,9 @@ const H1 = styled.h1`
   width: 70%;
 `;
 export const NavCat = ({ data }) => {
+  const navigate = useNavigate();
 
-  
+  /////
   const [hover, setHover] = useState({
     one: true,
     two: false,
@@ -124,7 +129,7 @@ export const NavCat = ({ data }) => {
     border-radius: 30px;
   `;
   return (
-    <Main className="width-1200 ">
+    <Main>
       <TextDiv>
         <img width="90px" className="mb-6" src={data.logo_img} alt="" />
         <SubHeading>{data.title}</SubHeading>
@@ -146,7 +151,7 @@ export const NavCat = ({ data }) => {
           {hover.one && (
             <ImgText>
               <ImgP>{data.img1.description}</ImgP>
-              <Button>EXPLORE</Button>
+              <Button onClick={() => navigate(data.pathname)}>EXPLORE</Button>
             </ImgText>
           )}
         </Img1>
@@ -165,7 +170,7 @@ export const NavCat = ({ data }) => {
           {hover.two && (
             <ImgText>
               <ImgP>{data.img2.description}</ImgP>
-              <Button>EXPLORE</Button>
+              <Button onClick={() => navigate(data.pathname)}>EXPLORE</Button>
             </ImgText>
           )}
         </Img2>
@@ -184,12 +189,11 @@ export const NavCat = ({ data }) => {
           {hover.three && (
             <ImgText>
               <ImgP>{data.img3.description}</ImgP>
-              <Button>EXPLORE</Button>
+              <Button onClick={() => navigate(data.pathname)}>EXPLORE</Button>
             </ImgText>
           )}
         </Img3>
       </ImgDiv>
-      <h1>dfgd</h1>
     </Main>
   );
 };
