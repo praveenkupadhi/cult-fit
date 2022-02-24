@@ -1,8 +1,8 @@
 import { LOG_IN, LOG_OUT } from "./actionTypes";
-
+const token = sessionStorage.getItem("Auth Token");
 let init = {
-  token: sessionStorage.getItem("Auth Token") || "",
-  log: sessionStorage.getItem("Auth Token") && true,
+  token: token || "",
+  log: token && true,
 };
 
 export const LoginReducer = (store = init, { type }) => {

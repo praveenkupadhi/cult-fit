@@ -169,6 +169,7 @@ export const Login = ({ setLog }) => {
   const signIn = () => {
     signInWithPopup(auth, googleProvider).then((response) => {
       navigate("/");
+      console.log(response);
       sessionStorage.setItem(
         "Auth Token",
         response._tokenResponse.refreshToken
@@ -197,20 +198,22 @@ export const Login = ({ setLog }) => {
   }
 
   const verifyOtp = () => {
-    console.log(otp);
     if (otp.length === 6) {
       let confirmationResult = window.confirmationResult;
       confirmationResult
         .confirm(otp.join(""))
         .then((result) => {
-          // User signed in successfully.
           const user = result.user;
-          console.log(user);
+          sessionStorage.setItem(
+            "Auth Token",
+            user.stsTokenManager.refreshToken
+          );
           alert("login Succesfully");
           setLog(false);
           // ...
         })
         .catch((error) => {
+          console.log(error);
           alert("Wrong OTP");
         });
     }
