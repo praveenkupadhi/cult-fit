@@ -96,6 +96,8 @@ const H1 = styled.h1`
   width: 70%;
 `;
 export const NavCat = ({ data }) => {
+
+  
   const [hover, setHover] = useState({
     one: true,
     two: false,
