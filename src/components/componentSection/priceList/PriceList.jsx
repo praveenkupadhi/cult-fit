@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 const Hr = styled.div`
   width: 70%;
   height: 1px;

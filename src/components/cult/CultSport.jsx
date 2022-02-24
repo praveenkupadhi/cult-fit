@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const CultSport = () => {
-  return (
-    <div>CultSport</div>
-  )
-}
+	return <div>CultSport</div>;
+};
