@@ -8,7 +8,6 @@ import { OnlinePT } from "./components/cult/OnlinePT";
 import { CultSport } from "./components/cult/CultSport";
 import { LuxuryGyms } from "./components/cult/LuxuryGyms";
 import { Footer } from "./components/Footer/Footer";
-import { Home } from "./components/homePage/Home";
 
 function App() {
   return (
