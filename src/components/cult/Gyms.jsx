@@ -2,6 +2,7 @@ import React from "react";
 import { Banner } from "../componentSection/banner/banner";
 import { Timer } from "../componentSection/timer/Timer";
 import { Trails } from "../componentSection/trails/Trails";
+
 import { PriceList } from "../componentSection/priceList/PriceList";
 
 export const Gyms = () => {

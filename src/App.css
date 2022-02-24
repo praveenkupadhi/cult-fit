@@ -29,3 +29,15 @@
 	font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
 		sans-serif;
 }
+.text-sub-gray{
+  color: rgb(136, 142, 158);
+    font-size: 16px;
+    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.none{
+  opacity: 0;
+  margin-top: -100px;
+}
+.pointer{
+  cursor: pointer;
+}
