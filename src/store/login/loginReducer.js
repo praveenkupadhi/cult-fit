@@ -16,7 +16,7 @@ export const LoginReducer = (store = init, { type }) => {
       sessionStorage.removeItem("Auth Token");
       return {
         token: "",
-        log: true,
+        log: false,
       };
     }
     default:

@@ -1,12 +1,12 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { auth, googleProvider } from "../../firebase-config";
+
 import {
   RecaptchaVerifier,
   signInWithPopup,
   signInWithPhoneNumber,
 } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
 import { Otp } from "./Otp";
 
 const Main = styled.div`
@@ -160,20 +160,19 @@ const Policy = styled.div`
   text-align: center;
 `;
 
-export const Login = ({ setLog }) => {
+export const Login = ({ setLog, checkUserLoged }) => {
   const [number, setNumber] = useState(null);
   const [sent, setSent] = useState(false);
   const [otp, setOtp] = useState([]);
 
-  const navigate = useNavigate();
   const signIn = () => {
     signInWithPopup(auth, googleProvider).then((response) => {
-      navigate("/");
-      console.log(response);
+      checkUserLoged();
       sessionStorage.setItem(
         "Auth Token",
         response._tokenResponse.refreshToken
       );
+      setLog(false);
     });
   };
   function ganerateRecaptcha() {
@@ -208,9 +207,9 @@ export const Login = ({ setLog }) => {
             "Auth Token",
             user.stsTokenManager.refreshToken
           );
-          alert("login Succesfully");
+          console.log(result);
+          checkUserLoged();
           setLog(false);
-          // ...
         })
         .catch((error) => {
           console.log(error);

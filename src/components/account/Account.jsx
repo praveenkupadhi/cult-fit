@@ -1,45 +1,75 @@
 import { useEffect } from "react";
 import styled from "styled-components";
 import { auth, db } from "../../firebase-config";
-import { onAuthStateChanged } from "firebase/auth";
-import { addDoc, collection, doc, getDocs } from "firebase/firestore";
+import { signOut } from "firebase/auth";
+import { useSelector, useDispatch } from "react-redux";
+import { logOut } from "../../store/login/action";
 
 const Main = styled.div`
+  position: fixed;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  width: 300px;
+  flex-direction: column;
+  color: white;
+  border-radius: 10px;
+  background: #1b1b1b;
+  z-index: 9999;
+`;
+const H1 = styled.h1`
+  font-size: 20px;
+  margin: 20px 0;
+`;
+const BG = styled.div`
+  position: fixed;
+  top: 0;
+  z-index: 999;
   width: 100%;
-  height: 1000px;
+  height: 100%;
+  left: 0;
 `;
 
-export const Account = () => {
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/firebase.User
-      const uid = user.uid;
-      //   console.log(user);
+export const Account = ({ setAccount }) => {
+  const user = useSelector((state) => state.user);
+  const dispatch = useDispatch();
+  const signOutUser = () => {
+    signOut(auth)
+      .then((res) => {
+        dispatch(logOut());
+        setAccount(false);
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+  };
 
-      const postsCollectionRef = collection(db, "users");
-      async function handlePost() {
-        await addDoc(postsCollectionRef, {
-          cart: [
-            {
-              title: "cult",
-            },
-          ],
-          author: {
-            name: user.displayName,
-            id: user.uid,
-          },
-        });
-      }
-      //   handlePost();
-    } else {
-      // User is signed out
-      // ...
-    }
-  });
-  //   useEffect(() => {
-
-  //   }, []);
-
-  return <Main>hello</Main>;
+  return (
+    <>
+      <Main>
+        <H1>
+          name: <span>{user.name}</span>
+        </H1>
+        <H1>
+          mobile: <span>{user.mobile}</span>
+        </H1>
+        <H1>
+          email: <span>{user.email}</span>
+        </H1>
+        <button
+          style={{
+            margin: "auto",
+            background: "red",
+            padding: "5px 10px",
+            borderRadius: "10px",
+          }}
+          onClick={signOutUser}
+        >
+          signOut
+        </button>
+      </Main>
+      <BG onClick={() => setAccount(false)}></BG>
+    </>
+  );
 };

@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { SecondaryNav } from "./SecondaryNav";
 import "./style/navbar.css";
+import { useSelector } from "react-redux";
 import emptyCart from "./images/empty-cart.png";
 
 const Navbar = ({ setLog }) => {
+  const isLoged = useSelector((store) => store.login.log);
   const [cart, setCart] = useState("cart-section-none");
+  const navigate = useNavigate();
 
   const cartClassChange = () => {
     if (cart === "cart-section-none") {
@@ -142,7 +145,6 @@ const Navbar = ({ setLog }) => {
                 ></div>
                 <img
                   onClick={() => {
-                
                     setLog(true);
                   }}
                   src={
