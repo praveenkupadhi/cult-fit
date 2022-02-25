@@ -21,6 +21,10 @@ import { onAuthStateChanged } from "firebase/auth";
 import { doc, setDoc, getDoc } from "firebase/firestore";
 
 import { Account } from "./components/account/Account";
+import { Fitness } from "./components/live/Fitness";
+import { OnlineConsult } from "./components/care/OnlineConsult";
+import { Order } from "./components/eat/Order";
+import { Mind } from "./components/mind/Mind";
 
 function App() {
   const [log, setLog] = useState(false);
@@ -78,6 +82,10 @@ function App() {
         <Route path="/cult/online-personal-training" element={<OnlinePT />} />
         <Route path="/store/gear" element={<CultSport />} />
         <Route path="/cult/othergyms" element={<LuxuryGyms />} />
+        <Route path="/live/fitness" element={<Fitness />} />
+        <Route path="/care/doctor-consultation" element={<OnlineConsult />} />
+        <Route path="/eat/eatordernow" element={<Order />} />
+        <Route path="/mind/therapy" element={<Mind />} />
       </Routes>
       <Footer />
     </div>
