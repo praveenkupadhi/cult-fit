@@ -27,6 +27,7 @@ import { Order } from "./components/eat/Order";
 import { Mind } from "./components/mind/Mind";
 import { Products } from "./components/products/Products";
 import { NotFound } from "./components/notFound/notFound";
+import { SingleProduct } from "./components/singleProduct/singleProduct";
 
 function App() {
   const [log, setLog] = useState(false);
@@ -89,6 +90,7 @@ function App() {
         <Route path="/eat/eatordernow" element={<Order />} />
         <Route path="/mind/therapy" element={<Mind />} />
         <Route path="/store/products/:cat" element={<Products />} />
+        <Route path="/store/product/:id" element={<SingleProduct />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
