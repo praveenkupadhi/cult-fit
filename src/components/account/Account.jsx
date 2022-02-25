@@ -1,6 +1,5 @@
-import { useEffect } from "react";
 import styled from "styled-components";
-import { auth, db } from "../../firebase-config";
+import { auth } from "../../firebase-config";
 import { signOut } from "firebase/auth";
 import { useSelector, useDispatch } from "react-redux";
 import { logOut } from "../../store/login/action";

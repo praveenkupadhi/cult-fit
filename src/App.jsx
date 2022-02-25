@@ -25,6 +25,8 @@ import { Fitness } from "./components/live/Fitness";
 import { OnlineConsult } from "./components/care/OnlineConsult";
 import { Order } from "./components/eat/Order";
 import { Mind } from "./components/mind/Mind";
+import { Products } from "./components/products/Products";
+import { NotFound } from "./components/notFound/notFound";
 
 function App() {
   const [log, setLog] = useState(false);
@@ -86,6 +88,8 @@ function App() {
         <Route path="/care/doctor-consultation" element={<OnlineConsult />} />
         <Route path="/eat/eatordernow" element={<Order />} />
         <Route path="/mind/therapy" element={<Mind />} />
+        <Route path="/store/products/:cat" element={<Products />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
