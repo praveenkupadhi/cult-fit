@@ -28,6 +28,7 @@ import { Mind } from "./components/mind/Mind";
 import { Products } from "./components/products/Products";
 import { NotFound } from "./components/notFound/notFound";
 import { SingleProduct } from "./components/singleProduct/singleProduct";
+import { CheckOut } from "./components/checkout/CheckOut";
 
 function App() {
   const [log, setLog] = useState(false);
@@ -72,6 +73,7 @@ function App() {
       <Navbar
         setLog={isLoged ? setAccount : setLog}
         log={isLoged ? account : log}
+        changeState={checkUserLoged}
       />
       {log && (
         <Login checkUserLoged={checkUserLoged} setLog={setLog} log={log} />
@@ -90,7 +92,13 @@ function App() {
         <Route path="/eat/eatordernow" element={<Order />} />
         <Route path="/mind/therapy" element={<Mind />} />
         <Route path="/store/products/:cat" element={<Products />} />
-        <Route path="/store/product/:id" element={<SingleProduct />} />
+        <Route path="/store/gear/checkout" element={<CheckOut />} />
+        <Route
+          path="/store/product/:id"
+          element={
+            <SingleProduct setLog={setLog} changeState={checkUserLoged} />
+          }
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

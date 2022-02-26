@@ -3,19 +3,16 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { SecondaryNav } from "./SecondaryNav";
 import "./style/navbar.css";
 import { useSelector } from "react-redux";
-import emptyCart from "./images/empty-cart.png";
 
-const Navbar = ({ setLog }) => {
+import { Cart } from "./cart";
+
+const Navbar = ({ setLog, changeState }) => {
   const isLoged = useSelector((store) => store.login.log);
-  const [cart, setCart] = useState("cart-section-none");
+  const [cart, setCart] = useState(false);
   const navigate = useNavigate();
 
   const cartClassChange = () => {
-    if (cart === "cart-section-none") {
-      setCart("cart-section");
-    } else {
-      setCart("cart-section-none");
-    }
+    setCart(!cart);
   };
 
   const { pathname } = useLocation();
@@ -174,34 +171,7 @@ const Navbar = ({ setLog }) => {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            position: "fixed",
-            right: "-16%",
-            top: "33px",
-            transition: "all 1s ease",
-          }}
-          className={cart}
-        >
-          <p>Your Cart</p>
-          <div className="empty-cart">
-            <div>
-              <div className="empty-cart-image">
-                <img src={emptyCart} />
-              </div>
-              <div>Looks like you haven't made any purchases yet</div>
-            </div>
-            <div
-              style={{
-                cursor: "pointer",
-              }}
-              onClick={() => setCart("cart-section-none")}
-              className="back-btn-cart"
-            >
-              <a>Back</a>
-            </div>
-          </div>
-        </div>
+        {cart && <Cart setCart={setCart} changeState={changeState} />}
       </nav>
       <SecondaryNav change={{ change }} scrollPosition={scrollPosition} />
     </>
