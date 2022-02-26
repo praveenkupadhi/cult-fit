@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { data } from "../../data/allData";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import styled from "styled-components";
 
 import { auth, db } from "../../firebase-config";
@@ -280,9 +280,11 @@ export const SingleProduct = ({ changeState, setLog }) => {
         <div className="buttons">
           <div onClick={addToCart} className="add-cart">
             Add to Cart
-          </div>
+          </div>{" "}
           <div className="view-cart">
-            View Cart <span>({cartCount.cart.length})</span>
+            <Link to="/store/gear/checkout">
+              View Cart <span>({cartCount.cart.length})</span>
+            </Link>
           </div>
         </div>
       </Right>

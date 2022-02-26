@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { auth, db } from "../../firebase-config";
 import { onAuthStateChanged } from "firebase/auth";
 import { doc, updateDoc, getDoc } from "firebase/firestore";
-import { setUser } from "../../store/user/action";
+import { Link } from "react-router-dom";
 
 const Img = styled.div`
   & img {
@@ -214,7 +214,9 @@ export const Cart = ({ setCart, changeState }) => {
           {user.cart.length} {user.cart.length === 1 ? "item" : "items"}{" "}
           <Dot></Dot> ₹ {totalPrice}
         </h1>
-        <button>BUY NOW</button>
+        <Link to="/store/gear/checkout">
+          <button>BUY NOW</button>
+        </Link>
       </CheckOut>
     </div>
   );
