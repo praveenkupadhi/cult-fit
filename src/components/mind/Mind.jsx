@@ -33,7 +33,13 @@ export const Mind = () => {
         alt=""
       />
       <H1>EXPERTS TO HELP YOU</H1>
-      <Sessions data={TherapySessions()} />
+      
+       
+      <div onClick={()=>{
+        window.location.href="https://www.cult.fit/mind/mindtherapy/bundle-session?productId=THERAPY_PACK&subCategoryCode=MIND_THERAPY&sellableProductId=COUPLE_THERAPY_1&id=COUPLE_THERAPY_1&setCode=COUPLE_THERAPY_SET&clubCode=COUPLE_THERAPY_ONLINE&pageType=mindtherapy"
+      }} ><Sessions data={TherapySessions()}/>
+
+      </div>
     </div>
   );
 };

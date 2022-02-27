@@ -43,7 +43,7 @@ export const Order = () => {
     {
       id: 1,
       images: [
-        "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/8bqevtbTEspkxdKnMyvaoAPE",
+        "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_295,ar_1.33,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/eat/meals/EAT6719/primary/1_1.jpg",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/LLhQ1gM3qGRTdh28N7e75NEY",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/rev2EFN2NizpFFhzCHqTeQXt",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/16NEEv118n71q7E2YryYaoz4",
@@ -53,7 +53,7 @@ export const Order = () => {
       tagName: "CULTSPORT",
       title: "Vitals Lifestyle Polo Tshirt",
       category: "men",
-      price: 1180,
+      price: 59,
       cutPrice: 1799,
       description:
         "Not so classic polo T-shirt. This polo is made for preppy and versatile outfit just for you. Accented by signature branding , contrast details & super comfortable styling.",
@@ -70,7 +70,7 @@ export const Order = () => {
     {
       id: 2,
       images: [
-        "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/m6hPQzL7ZeoxrDVho4zZwjRx",
+        "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_295,ar_1.33,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/eat/meals/EAT6612/primary/2_1.jpg",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/cFRw2pYDz5h5zrpLwPiG3M8o",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/qT2aVJogwuFyNSqrPjfwUYcU",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/CRzg5uxrf59uJUHeD43bWqb8",
@@ -80,7 +80,7 @@ export const Order = () => {
       tagName: "CULTSPORT",
       title: "Vitals Lifestyle  Tshirt",
       category: "men",
-      price: 909,
+      price: 99,
       cutPrice: 1399,
       description:
         "Give fitness fashion a new meaning with the this crew neck running Tshirt. With fabric that lets you breathe without restriction, combines the sweat-wicking Flydry technology and supersoft feel.",
@@ -97,7 +97,7 @@ export const Order = () => {
     {
       id: 3,
       images: [
-        "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/WoJc353LB1KFvhMkU8cGmyj3",
+        "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_295,ar_1.33,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/eat/meals/EAT6614/primary/2_1.jpg",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/VSDBZp4SRdnqy4L68hMBDa8d",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/KX2MoPjaiM7gpdSLZXGosYW6",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/GobfXpdCiBekhNFZyiMo76b2",
@@ -107,7 +107,7 @@ export const Order = () => {
       tagName: "CULTSPORT",
       title: "Vitals Lifestyle  Tshirt",
       category: "men",
-      price: 909,
+      price: 94,
       cutPrice: 1399,
       description:
         "Give fitness fashion a new meaning with the this crew neck running Tshirt. With fabric that lets you breathe without restriction, combines the sweat-wicking Flydry technology and supersoft feel.",
@@ -124,7 +124,7 @@ export const Order = () => {
     {
       id: 4,
       images: [
-        "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/GYxRAZLFfu6LptPvj3bPfxfi",
+        "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_295,ar_1.33,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/eat/meals/EAT6672/primary/3_1.jpg",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/EBbVJmcR8UTq636F7XFmaZcr",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/C68PqZyEN4tQUVhnMp2cxT93",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/XGdA6cFX8LjPDakhb1vxLj1R",
@@ -134,7 +134,7 @@ export const Order = () => {
       tagName: "CULTSPORT",
       title: "Vitals Lifestyle Polo Tshirt",
       category: "men",
-      price: 979,
+      price: 136,
       cutPrice: 1399,
       description:
         "Give fitness fashion a new meaning with the this crew neck running Tshirt. With fabric that lets you breathe without restriction, combines the sweat-wicking Flydry technology and supersoft feel.",
@@ -151,7 +151,7 @@ export const Order = () => {
     {
       id: 5,
       images: [
-        "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/mvth4LVt8EYFCTnGRRTxgfxc",
+        "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_295,ar_1.33,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/eat/meals/EAT6524/primary/4_1.jpg",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/2Mnh3FN6bdHWEByk1JDaNpdV",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/cVPwhuSPr3JNTimhUC1pxTuw",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/a8h5FR7x5ccpWHzKp6bHsabj",
@@ -162,7 +162,7 @@ export const Order = () => {
       title: "Vitals Solid Running T-Shirt",
       category: "men",
       price: 974,
-      cutPrice: 1499,
+      cutPrice: 99,
       description:
         "Confer a sporty edge to your running attire with this Tshirt with FlyDry technology to keep you dry no matter how much you sweat.It's also lightweight and breathable to make your run more comfortable.",
       PRODUCT_DETAILS: [
@@ -178,7 +178,7 @@ export const Order = () => {
     {
       id: 6,
       images: [
-        "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/XVGSotuAudrpG1Lw1MYrxNyL",
+        "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_295,ar_1.33,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/eat/meals/EAT6618/primary/4_1.jpg",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/APpht9sHHHEyaFr8oHVzi8Am",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/AX92rJNwtpdgeBhewL9oeUnw",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/QFjApgQ6BAADRCRfRqSMrH4v",
@@ -188,7 +188,7 @@ export const Order = () => {
       tagName: "CULTSPORT",
       title: "Vitals Logo Running T-Shirt",
       category: "men",
-      price: 974,
+      price: 54,
       cutPrice: 1499,
       description:
         "Confer a sporty edge to your running attire with this Tshirt with FlyDry technology to keep you dry no matter how much you sweat.It's also lightweight and breathable to make your run more comfortable.",
@@ -205,7 +205,7 @@ export const Order = () => {
     {
       id: 7,
       images: [
-        "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/ng1omNbwsh7Tm6cF6jA6ELCZ",
+        "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_295,ar_1.33,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/eat/meals/EAT6109/primary/9_1.jpg",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/fwwFQY9kMMPYJzVRXa5GERPt",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/KKwn6a9bExuRcrKnVkF2WCb4",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/ZezqS6tntkzSrt2ZhPQsJJWX",
@@ -215,8 +215,8 @@ export const Order = () => {
       tagName: "CULTSPORT",
       title: "Vitals Logo Running T-Shirt",
       category: "men",
-      price: 974,
-      cutPrice: 1499,
+      price: 74,
+      cutPrice: 129,
       description:
         "Amp your fitness wardrobe with this Graphic Print crew neck workout t-shirt. With fabric that lets you breathe without restriction, this t-shirt keeps up with your active life!",
       PRODUCT_DETAILS: [
@@ -232,7 +232,7 @@ export const Order = () => {
     {
       id: 8,
       images: [
-        "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/kZJ7q5HoS6LCpCpgetFsu5Gs",
+        "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_295,ar_1.33,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/eat/meals/EAT6712/primary/3_1.jpg",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/ou4GPuZob55Us8BvnCqzqjwE",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/K2y71ziBphqfztCN9fhjiVDz",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/puqnsGVnqAHiKpW2iJ4udzKb",
@@ -242,8 +242,8 @@ export const Order = () => {
       tagName: "CULTSPORT",
       title: "Vitals Graphic Running T-Shirt",
       category: "men",
-      price: 779,
-      cutPrice: 1199,
+      price: 109,
+      cutPrice: 109,
       description:
         "Run your own race, defy the norms and cook up a storm in this workout T-shirt.Meant to move with you, this combines design and technology to deliver a performance as impressive as yours.",
       PRODUCT_DETAILS: [
@@ -260,7 +260,7 @@ export const Order = () => {
     {
       id: 9,
       images: [
-        "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/7eTveQueStdDhLto5i8eSND7",
+        "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_221,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/packs/eat/BREAKFAST_VEG/6_mag_web.jpg",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/1TFhUFGWYcgeehQAxb8T9szy",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/jaqMe5eGqXTPV3gsTDHjWDwo",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/VecG5XxMmhq8Lfs7AQUL2msZ",
@@ -270,7 +270,7 @@ export const Order = () => {
       tagName: "CULTSPORT",
       title: "Vitals Logo Running T-Shirt",
       category: "men",
-      price: 909,
+      price: 103,
       cutPrice: 1299,
       description:
         "Not so classic polo T-shirt. This polo is made for preppy and versatile outfit just for you. Accented by signature branding , contrast details & super comfortable styling.",
@@ -287,7 +287,7 @@ export const Order = () => {
     {
       id: 10,
       images: [
-        "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/Q3jyzaEWcQ1ST8vzye54kQjZ",
+        "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_221,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/packs/eat/WEIGHT_WISE_hEALTH_JAR/5_mag_web.jpg",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/2Db6tZeeKgXr6Cjwpu9AP34Y",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/WQLEj6xY64bTtgvrRLTQ5vBX",
         "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/HHJ1qPvMzunFkQEsc7g67EBH",
@@ -297,7 +297,7 @@ export const Order = () => {
       tagName: "CULTSPORT",
       title: "Layr Lifestyle Sweatshirt",
       category: "men",
-      price: 1884,
+      price: 184,
       cutPrice: 2899,
       description:
         "Beat the chills and say hello to the toasty winters with the Cultsport Lifestyle Sweatshirt. Designed to be the perfect 2nd layer 365 days a year. Its time to get all snuggled up",
