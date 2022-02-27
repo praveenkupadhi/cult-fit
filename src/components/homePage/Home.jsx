@@ -1,125 +1,167 @@
-import { HeroSec } from "../componentSection/heroContainer/HeroSec";
-import { MobilePromo } from "../componentSection/mobilePromo/MobilePromo";
-import { NavCat } from "../componentSection/navCategory/NavCat";
-export const Home = () => {
-  let cult = {
-    logo_img: "https://static.cure.fit/assets/images/cult-brand.svg",
-    title: "Makes fitness fun and easy",
-    pathname: "/cult/gym",
-    description:
-      "Try our fun group classes at our cult centers or work out at best-in-class gyms",
-    img1: {
-      title: "Find a cult center near you",
-      description:
-        "Work out at our world class cult centers with the safest measures. From ample workout space to ensure social distancing to frequent sanitisation, cult is playing it safe so you don't have to.",
-      src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/6285c073-5e3d-4abf-9189-21403628a1f4.png",
-    },
-    img2: {
-      title: "Find a cult center near you",
-      description:
-        "Get unlimited access to the best gyms in town with a cultpass. Carefully handpicked by cult, these select gyms boast of cult certified trainers, best-in-class safety and equipment standards.",
-      src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/f66c717a-bcb9-4d64-b227-115d1010b610.jpeg",
-    },
-    img3: {
-      title: "Find a cult center near you",
-      description:
-        "Personalised workout sessions with the best of cult trainers to help you achieve your fitness goals from the comfort of home.",
-      src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/aedcb538-777e-4564-b422-30eb8dc220d2.png",
-    },
-  };
-  let live = {
-    logo_img: "https://static.cure.fit/assets/images/live-brand.svg",
-    title: "At-home health & fitness made easy",
-    pathname: "/live/fitness",
-    description:
-      "Get fit and stay healthy from the comfort of your home with live workouts",
-    img1: {
-      title: "Fitness",
-      description:
-        "Stay fit from home with online fitness classes led by celebs and certified cult coaches.",
-      src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png",
-    },
-    img2: {
-      title: "Mindfulness",
-      description:
-        "Relax your mind, body and soul with guided meditation & reach your full potential.",
-      src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png",
-    },
-    img3: {
-      title: "Recipes",
-      description:
-        "Easy-to-follow healthy recipes designed by our in-house experts and nutritionists.",
-      src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png",
-    },
-  };
-  let cultsport = {
-    logo_img: "https://static.cure.fit/assets/images/cult-sports.svg",
-    title: "Collection of premium athleisure wear",
-    pathname: "/store/gear",
-    description:
-      "Browse through our collection to help you ace your workouts in style",
-    img1: {
-      title: "Equipment",
-      description:
-        "Get your hands on cult branded workout equipment and slay your fitness goals.",
-      src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/5c333536-cc72-4e5a-8648-9dcb8006f7c0.png",
-    },
-    img2: {
-      title: "Footwear",
-      description: "Exclusive footgear designed for workouts and leisure use.",
-      src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/631e1299-7ad1-4e06-b410-f77671c2c540.png",
-    },
-    img3: {
-      title: "Apparel",
-      description:
-        "Browse through a range of collections that’s been tested on athletes and designed for you.",
-      src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/dec83eee-b999-4058-ac0f-6d346b8d071a.png",
-    },
-  };
-  let eatfit = {
-    logo_img: "https://static.cure.fit/assets/images/eat-title.svg",
-    title: "Healthy, Tasty, Everyday Food!",
-    pathname: "/eat/eatordernow",
-    description:
-      "Indulge in healthy meals that are both nutritious and delicious",
-    img1: {
-      title: "Home Style",
-      description:
-        "Nothing can beat the Great Indian Thali. Enjoy homestyle food just like mum's, made with less oil and mild spices.",
-      src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/257e0d59-ebf5-406d-a775-ba22ed951dc8.png",
-    },
-    img2: {
-      title: "Weight Watch",
-      description:
-        "Go cal-light with weight watch lunches that have quality proteins and high-fibre grains to keep you feeling full for longer.",
-      src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/ee64deeb-f19d-4eb7-ac58-c04434d02ae8.png",
-    },
-    img3: {
-      title: "Fit Curries",
-      description:
-        "Try our perfect one-box meals featuring all-time classics like rajma, chole and Thai green curry served with high-fibre brown rice or millet.",
-      src: "https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/53c04204-7350-4d5c-9a12-62fc07cbb896.png",
-    },
-  };
+import { useState, useRef, useEffect } from "react";
+import styled from "styled-components";
 
+export const Home = () => {
+  const [muted, setMuted] = useState(true);
+  const videoRef = useRef(null);
+  useEffect(() => {
+    videoRef.current.muted = muted;
+  }, [muted]);
+  const FirstDiv = styled.div`
+    height: 40em;
+    margin-top: 10rem;
+  `;
+  const Video = styled.video`
+    height: 450px;
+    background-color: #a1b0c5;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px 0px 0px;
+
+    float: left;
+  `;
+  const TextDiv = styled.div`
+    width: 50%;
+  `;
+  const VideoDiv = styled.div`
+    width: 100%;
+    position: relative;
+  `;
+  const MuteBtn = styled.div`
+    position: absolute;
+    top: 80%;
+    right: 1%;
+    cursor: pointer;
+  `;
+  const H1Text = styled.h1`
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    position: relative;
+    margin-top: 20px;
+    font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
+      sans-serif;
+  `;
+  const PText = styled.p`
+    text-indent: 8px;
+    display: inline;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+    left: 16rem;
+    top: 10%;
+    & > :nth-child(1) {
+      opacity: 1;
+      top: -15%;
+      animation-name: span1;
+      animation-duration: 5s;
+      animation-delay: 5s;
+      animation-iteration-count: infinite;
+    }
+    & > :nth-child(2) {
+      opacity: 0;
+      top: -120%;
+      animation-name: span2;
+      animation-duration: 5s;
+      animation-delay: 10s;
+      animation-iteration-count: infinite;
+    }
+    & > :nth-child(3) {
+      opacity: 0;
+      top: 120%;
+      animation-name: span3;
+      animation-duration: 5s;
+      animation-delay: 15s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes span1 {
+      0% {
+        opacity: 1;
+        top: -15%;
+      }
+      50% {
+        opacity: 0;
+        top: 120%;
+      }
+      100% {
+        opacity: 0;
+        top: -120%;
+      }
+    }
+
+    @keyframes span2 {
+      0% {
+        opacity: 0;
+        top: -120%;
+      }
+      50% {
+        opacity: 1;
+        top: -15%;
+      }
+      100% {
+        opacity: 0;
+        top: 120%;
+      }
+    }
+    @keyframes span3 {
+      0% {
+        opacity: 0;
+        top: 120%;
+      }
+      50% {
+        opacity: 0;
+        top: -120%;
+      }
+      100% {
+        opacity: 1;
+        top: -15%;
+      }
+    }
+  `;
+  const Span = styled.span`
+    animation: animation-1d3gycc 7.5s linear infinite 0s;
+    color: #00abe9;
+    opacity: 0;
+    top: -120%;
+    left: -10%;
+    overflow: hidden;
+    position: absolute;
+  `;
   return (
     <div>
-      <HeroSec />
-      <NavCat data={cult} />
-      <NavCat data={live} />
-      <NavCat data={cultsport} />
-      <NavCat data={eatfit} />
-      <MobilePromo />
-      <img
-        width="100%"
-        src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/clp/business-cult.png"
-        alt=""
-      />
-      <img
-        width="100%"
-        src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/clp/careers-cult.png"
-        alt=""
-      />
+      <FirstDiv className=" flex width-1200">
+        <TextDiv className="left">
+          <H1Text>
+            For the
+            <PText>
+              {" "}
+              <Span> Love </Span>
+              <Span> fun </Span>
+              <Span> ease </Span>
+            </PText>
+          </H1Text>
+          <H1Text>of fit</H1Text>
+        </TextDiv>
+        <VideoDiv>
+          <Video width="100%" autoPlay loop ref={videoRef}>
+            <source
+              src="https://cdn-images.cure.fit/www-curefit-com/video/upload/w_800,q_auto:eco/vc_auto/video/vm/54f8ba74-0a19-42dc-aa64-ec19f0dee189.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </Video>
+          <MuteBtn onClick={() => setMuted(!muted)}>
+            <img
+              width="30px"
+              src={`https://static.cure.fit/assets/images/volume-${
+                muted ? "off" : "up"
+              }-outline.svg`}
+              alt=""
+            />
+          </MuteBtn>
+        </VideoDiv>
+      </FirstDiv>
     </div>
   );
 };

@@ -1,20 +1,9 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { SecondaryNav } from "./SecondaryNav";
 import "./style/navbar.css";
-import { useSelector } from "react-redux";
 
-import { Cart } from "./cart";
-
-const Navbar = ({ setLog, changeState }) => {
-  const isLoged = useSelector((store) => store.login.log);
-  const [cart, setCart] = useState(false);
-  const navigate = useNavigate();
-
-  const cartClassChange = () => {
-    setCart(!cart);
-  };
-
+const Navbar = () => {
   const { pathname } = useLocation();
   const [change, setChange] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -133,32 +122,28 @@ const Navbar = ({ setLog, changeState }) => {
             <div className="get-app-btn ">GET APP</div>
           </button>
           <div className="top-right-link-div ">
-            <div className="top-right">
-              <div width="35" className="top-right-images ">
-                <div
-                  width="35"
-                  height="35"
-                  className="top-right-icon-div"
-                ></div>
-                <img
-                  onClick={() => {
-                    setLog(true);
-                  }}
-                  src={
-                    "https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_26,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/header/Profile.png" ||
-                    "https://profile-pictures-prod.s3.amazonaws.com/4728c80a-ad4a-42c3-8d96-67631b04e922"
-                  }
-                  alt="user_profile_picture"
-                  className=" profile-pic"
-                  loading="lazy"
-                  width="35"
-                  height="35"
-                />
+            <a href="/account">
+              <div className="top-right">
+                <div width="35" className="top-right-images ">
+                  <div
+                    width="35"
+                    height="35"
+                    className="top-right-icon-div"
+                  ></div>
+                  <img
+                    src="https://profile-pictures-prod.s3.amazonaws.com/4728c80a-ad4a-42c3-8d96-67631b04e922"
+                    alt="user_profile_picture"
+                    className=" profile-pic"
+                    loading="lazy"
+                    width="35"
+                    height="35"
+                  />
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div className="style-prefix-e0dnmk">
-            <div width="24" className="cart-div" onClick={cartClassChange}>
+            <div width="24" className=" cart-div ">
               <span className="cart-dot"></span>
               <img
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/cart-dark-theme.svg"
@@ -171,7 +156,6 @@ const Navbar = ({ setLog, changeState }) => {
             </div>
           </div>
         </div>
-        {cart && <Cart setCart={setCart} changeState={changeState} />}
       </nav>
       <SecondaryNav change={{ change }} scrollPosition={scrollPosition} />
     </>

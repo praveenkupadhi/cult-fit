@@ -12,16 +12,30 @@ export const SecondaryNav = ({ change, scrollPosition }) => {
     { name: "cultsport", path: "/store/gear" },
     { name: "Luxury Gyms", path: "/cult/othergyms" },
   ];
-  const LIVE = [{ name: "Fitness", path: "/live/fitness" }];
-  const CARE = [{ name: "Online Consult", path: "/care/doctor-consultation" }];
-  const EAT = [{ name: "Order", path: "/eat/eatordernow" }];
-  const MIND = [{ name: "Therapy", path: "/mind/therapy" }];
+  const LIVE = [
+    { name: "Fitness", path: "/live/fitness" },
+    { name: "Mindfulness", path: "/live/mindfulness" },
+    { name: "Recipes", path: "/live/recipe" },
+  ];
+  const CARE = [
+    { name: "Online Consult", path: "/care/doctor-consultation" },
+    { name: "Lab Tests", path: "/care/diagnostic-tests" },
+    { name: "Dietician", path: "/care/dietician" },
+  ];
+  const EAT = [
+    { name: "Order", path: "/eat/eatordernow" },
+    { name: "Meal Plans", path: "/eat/subscribe" },
+  ];
+  const MIND = [
+    { name: "Therapy", path: "/mind/therapy" },
+    { name: "Mindfulness", path: "/mind/home" },
+  ];
   const STORE = [{ name: "cultsport", path: "/store/gear" }];
   useEffect(() => {
     changeCats();
   }, [change]);
 
-  if (pathname === "/") {
+  if (pathname == "/") {
     return null;
   }
   function changeCats() {

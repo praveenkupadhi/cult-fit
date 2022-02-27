@@ -5,12 +5,13 @@ export const PromoVideo = () => {
     <div>
       <h2
         style={{
-          marginTop: "100px",
+          marginTop: "90px",
           marginBottom: "10px",
           fontSize: "20px",
         }}
         className="width-1200"
       >
+        See why we are the safest gym in town
       </h2>
       <img
         width="100%"

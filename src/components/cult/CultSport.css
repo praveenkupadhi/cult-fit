@@ -1,7 +1,6 @@
 #imagesGear,
 #shopByWorkoutImages {
   display: flex;
-  margin:50px auto;
   justify-content: center;
 }
 
@@ -20,7 +19,7 @@
 
 #shopByWorkout {
   font-size: 22px;
-  margin-top: 40px;
+  margin-left: 75px;
   font-weight: 600;
 }
 
@@ -31,9 +30,7 @@
 
 #shopByCategory {
   font-size: 22px;
-  margin: auto;
-  width: 1200px;
-  margin-bottom: 30px;
+  margin-left: 75px;
   font-weight: 600;
 }
 
@@ -44,9 +41,8 @@
 
 #shopByCategoryImages {
   display: grid;
-  grid-template-columns: repeat(5, 250px);
-  margin: auto;
-  width: 1200px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .shopByCategoryImage {
@@ -57,22 +53,16 @@
 
 #spotlight {
   font-size: 22px;
-  margin:50px auto;
-  width: 1200px;
+  margin-left: 75px;
   font-weight: 600;
 }
 
 #spotlightImages {
-  margin:auto;
-  width: 1200px;
   display: flex;
-  margin-bottom: 50px;
+  margin-left: 70px;
 }
 
 .spotlightImage {
-  width: 602px;
+  width: 602p×;
   height: 335px;
-}
-img{
-  cursor: pointer;
 }
