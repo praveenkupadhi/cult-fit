@@ -35,6 +35,8 @@ function App() {
   const isLoged = useSelector((store) => store.login.log);
   const [account, setAccount] = useState(false);
   const dispatch = useDispatch();
+
+
   const checkUserLoged = () => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
